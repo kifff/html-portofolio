@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="p1.css" /> -->
+    <style>
+      .navigasi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navigasi a {
+        margin-left: 40px;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="fix">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- <div class="container-fluid"> -->
+        <a class="navbar-brand" href="#">myPortofolio </a>
+        <div class="garistiga">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../#aboutme">AboutMe</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Skill</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                aboutTugas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Tugas Kuliah</a>
+                </li>
+                <li><a class="dropdown-item" href="p11.html">pertemuan1</a></li>
+                <li><a class="dropdown-item" href="#">pertemuan2</a></li>
+                <li><a class="dropdown-item" href="#">pertemuan3</a></li>
+                <li><a class="dropdown-item" href="#">pertemuan4</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Latihan</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <!-- </div> -->
+      </nav>
+    </nav>
+    <section>
+      <div class="atas">
+        <nav class="nav1">
+          <div class="navigasi">
+            <a href="p11.html">identitas</a>
+            <a href="p12.html">kompas</a>
+            <a href="p13.html">listmenu</a>
+            <a href="p14.html">tabel</a>
+          </div>
+        </nav>
+        <br /><br />
+        <ul>
+          <h2>Menu dong sie'at</h2>
+          <li>mie aceh basah</li>
+          <li>mie aceh kering</li>
+          <li>mie aceh rebus</li>
+          <li>mie aceh goreng</li>
+        </ul>
+        <ol>
+          <h2>Minuman</h2>
+          <li>jus jeruk</li>
+          <li>jus mangga</li>
+          <li>kopi aceh</li>
+        </ol>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("click", function (event) {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector(".navbar-collapse");
+
+        // Periksa apakah yang diklik adalah navbar-toggler atau bagian dari navbar-collapse
+        var isClickInsideNavbar =
+          navbarToggler.contains(event.target) ||
+          navbarCollapse.contains(event.target);
+
+        // Jika tidak, maka tutup navbar
+        if (!isClickInsideNavbar) {
+          navbarCollapse.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>
